@@ -1958,7 +1958,7 @@ pre code {
         border: 0;
     }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     .table-responsive-lg {
         display: block;
         width: 100%;
@@ -4142,7 +4142,7 @@ input[type=button].btn-block {
         display: none;
     }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     .navbar-expand-lg > .container,
     .navbar-expand-lg > .container-fluid,
     .navbar-expand-lg > .container-sm,
@@ -10165,7 +10165,7 @@ section.resume-section .resume-section-content {
     display: inline-block;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     #about {
         text-align: center;
         height: calc(100vh - 3.375rem);
