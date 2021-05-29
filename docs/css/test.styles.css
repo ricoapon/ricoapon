@@ -10168,6 +10168,7 @@ section.resume-section .resume-section-content {
 @media (max-width: 991.98px) {
     #about {
         text-align: center;
+        height: calc(100vh - 3.375rem);
     }
 }
 
