@@ -2,7 +2,7 @@
   "name": "src",
   "description": "The source code for creating the styles.css file",
   "scripts": {
-    "scss": "sass styles.scss ../docs/css/styles.css --style=compressed --embed-sources"
+    "scss": "sass styles.scss ../docs/css/styles.css"
   },
   "dependencies": {
     "bootstrap": "5.0.1"
