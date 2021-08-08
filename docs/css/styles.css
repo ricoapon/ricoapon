@@ -10867,5 +10867,42 @@ section.resume-section .resume-section-content {
     padding: 5rem 3rem;
   }
 }
+/*--------------------------------------------------------------
+# About (hero) Section
+--------------------------------------------------------------*/
+#about {
+  width: 100%;
+  max-width: 100% !important;
+  height: 100vh;
+  background: url("../assets/img/hero-bg.png") top right no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#about div {
+  max-width: 75rem;
+}
+
+#about:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#about .social-links a {
+  font-size: 24px;
+  display: inline-block;
+}
+
+@media (max-width: 991.98px) {
+  #about {
+    text-align: center;
+    height: calc(100vh - 3.375rem);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
