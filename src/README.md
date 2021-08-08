@@ -16,3 +16,11 @@ This will override the docs/css/styles.css file.
 
 ## Not compressed
 I have chosen not to compress the CSS file. This is easier for local development. It only saved 50kb.
+
+# Gimp
+All the files used to create the background are located in the gimp directory.
+
+# Sources
+The following links are the source of idea's of this website:
+* https://bootstrapmade.com/demo/MyResume/
+* https://startbootstrap.com/theme/resume
