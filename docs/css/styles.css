@@ -10870,7 +10870,14 @@ section.resume-section .resume-section-content {
 /*--------------------------------------------------------------
 # About (hero) Section
 --------------------------------------------------------------*/
+/* On mobile, the about section will be placed underneath the navigation bar. When clicking on the link about,
+   you will not scroll up high enough. So we add another diff which is slightly higher. */
 #about {
+  margin-top: -3.375rem;
+  height: 3.375rem;
+}
+
+#about-section {
   width: 100%;
   max-width: 100% !important;
   height: 100vh;
@@ -10879,11 +10886,11 @@ section.resume-section .resume-section-content {
   position: relative;
 }
 
-#about div {
+#about-section div {
   max-width: 75rem;
 }
 
-#about:before {
+#about-section:before {
   content: "";
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
@@ -10893,13 +10900,13 @@ section.resume-section .resume-section-content {
   right: 0;
 }
 
-#about .social-links a {
+#about-section .social-links a {
   font-size: 24px;
   display: inline-block;
 }
 
 @media (max-width: 991.98px) {
-  #about {
+  #about-section {
     text-align: center;
     height: calc(100vh - 3.375rem);
   }
