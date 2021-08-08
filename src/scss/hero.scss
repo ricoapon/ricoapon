@@ -1,15 +1,15 @@
 /*--------------------------------------------------------------
-# About (hero) Section
+# Home (hero) Section
 --------------------------------------------------------------*/
 
-/* On mobile, the about section will be placed underneath the navigation bar. When clicking on the link about,
+/* On mobile, the home section will be placed underneath the navigation bar. When clicking on the link home,
    you will not scroll up high enough. So we add another diff which is slightly higher. */
-#about {
+#home {
   margin-top: -3.375rem;
   height: 3.375rem;
 }
 
-#about-section {
+#home-section {
   width: 100%;
   max-width: 100% !important;
   height: 100vh;
@@ -18,11 +18,11 @@
   position: relative;
 }
 
-#about-section div {
+#home-section div {
   max-width: 75rem;
 }
 
-#about-section:before {
+#home-section:before {
   content: "";
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
@@ -32,13 +32,13 @@
   right: 0;
 }
 
-#about-section .social-links a {
+#home-section .social-links a {
   font-size: 24px;
   display: inline-block;
 }
 
 @include media-breakpoint-down(lg) {
-  #about-section {
+  #home-section {
     text-align: center;
     height: calc(100vh - 3.375rem);
   }
