@@ -1,0 +1,6 @@
+:root {
+  --white: #fff; /* ChatGPT suggested #f4f4f4, but I don't see a reason to do this yet. */
+  --black: #000; /* ChatGPT suggested #050505, but I don't see a reason to do this yet. */
+
+  --bs-body-bg: var(--black);
+}
