@@ -1,0 +1,21 @@
+.navbar {
+  --bs-navbar-color: var(--white);
+  --bs-navbar-hover-color: var(--bs-primary);
+}
+
+.navbar .container {
+  /* Making the box slightly transparent makes it look a lot better! */
+  background: rgba(21, 21, 21, 0.94);
+}
+
+.navbar-toggler-icon {
+  /* The original icon is gray. The only way to make it white is to fully override the image. */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28244,244,244,0.95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991.98px) {
+  .navbar .container {
+    /* We don't want the navbar to span the full width for small screens. */
+    width: calc(100% - 1.5rem) !important;
+  }
+}

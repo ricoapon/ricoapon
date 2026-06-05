@@ -14,8 +14,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/navbar.css" rel="stylesheet"/>
 </head>
 <body>
+
+<nav class="navbar navbar-expand-md pt-3 fixed-top" id="topNav">
+    <div class="container px-3 py-2 border rounded-4 fw-bold">
+        <a class="navbar-brand js-scroll-trigger" href="#home">Rico Apon</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            </div>
+        </div>
+    </div>
+</nav>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
