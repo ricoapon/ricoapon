@@ -1,6 +1,8 @@
 :root {
   --white: #fff; /* ChatGPT suggested #f4f4f4, but I don't see a reason to do this yet. */
   --black: #000; /* ChatGPT suggested #050505, but I don't see a reason to do this yet. */
+  --bs-secondary: #151515;
+  --bs-secondary-rgb: 21, 21, 21;
 
   --bs-body-bg: var(--black);
 
@@ -30,4 +32,22 @@ h2 {
 /* Create my own class to be able to apply very bold styles. */
 .fw-very-bold {
   font-weight: 850 !important;
+}
+
+/* Always use "btn-secondary" for buttons in this project. They are styled like I want to for my site. */
+.btn-secondary {
+  --bs-btn-bg: var(--bs-secondary);
+  font-weight: 700;
+  color: var(--white);
+  /* Make the button slightly bigger. */
+  padding: 0 1.2rem;
+  min-height: 3rem;
+  display: inline-flex;
+  gap: 0.65rem;
+  justify-content: center;
+  align-items: center;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
 }
