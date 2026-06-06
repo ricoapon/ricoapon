@@ -22,6 +22,8 @@ section {
 h2 {
   /* Scrolling to the title of a page puts the title under the navbar. This puts the title under the navbar. */
   scroll-margin-top: var(--navbar-height);
+  /* Make the titles a lot bigger than Bootstrap normally does, which looks better. */
+  font-size: clamp(2.4rem, 6vw, 5rem);
 }
 
 .container {
@@ -47,6 +49,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 .btn-secondary:hover, .btn-secondary:focus {
   background-color: var(--bs-primary);
   border-color: var(--bs-primary);
