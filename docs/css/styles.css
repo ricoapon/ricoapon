@@ -26,3 +26,8 @@ h2 {
   /* Making the website slightly smaller looks better. */
   max-width: 1180px;
 }
+
+/* Create my own class to be able to apply very bold styles. */
+.fw-very-bold {
+  font-weight: 850 !important;
+}
