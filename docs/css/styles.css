@@ -21,3 +21,8 @@ h2 {
   /* Scrolling to the title of a page puts the title under the navbar. This puts the title under the navbar. */
   scroll-margin-top: var(--navbar-height);
 }
+
+.container {
+  /* Making the website slightly smaller looks better. */
+  max-width: 1180px;
+}
