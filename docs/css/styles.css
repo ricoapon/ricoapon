@@ -8,6 +8,10 @@
   --navbar-height: 82px;
 }
 
+html {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 section {
   /* This is to avoid overlapping with the navbar. The 80 is just a randomly chosen value. */
   padding-top: var(--navbar-height);
