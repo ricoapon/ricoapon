@@ -54,3 +54,16 @@ h2 {
   background-color: var(--bs-primary);
   border-color: var(--bs-primary);
 }
+
+/* Always use badges with the classes "badge rounded-pill text-primary border border-primary". */
+.badge {
+  /* Slight transparent blue-ish background color is a nice effect. */
+  background: rgba(45, 125, 255, 0.15) !important;
+  /* Make it bigger. */
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  gap: 0.65rem;
+  padding: 0.35rem 0.75rem;
+}
