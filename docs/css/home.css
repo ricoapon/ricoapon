@@ -1,0 +1,7 @@
+#home img {
+  max-width: clamp(300px, 40vw, 450px);
+}
+
+#home h1 {
+  font-size: clamp(4rem, 10vw, 13vh);
+}
