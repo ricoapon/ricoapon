@@ -23,6 +23,10 @@ section {
   padding-top: var(--navbar-height);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 850 !important;
+}
+
 h2 {
   /* Scrolling to the title of a page puts the title under the navbar. This puts the title under the navbar. */
   scroll-margin-top: var(--navbar-height);
@@ -39,11 +43,6 @@ h6 {
 .container {
   /* Making the website slightly smaller looks better. */
   max-width: 1180px;
-}
-
-/* Create my own class to be able to apply very bold styles. */
-.fw-very-bold {
-  font-weight: 850 !important;
 }
 
 /* Always use "btn-secondary" for buttons in this project. They are styled like I want to for my site. */
