@@ -1,21 +1,15 @@
 :root {
-  --white: #fff; /* ChatGPT suggested #f4f4f4, but I don't see a reason to do this yet. */
-  --black: #000; /* ChatGPT suggested #050505, but I don't see a reason to do this yet. */
   --bs-secondary: #151515;
   --bs-secondary-rgb: 21, 21, 21;
-
+  --bs-body-bg: #000;
   /* The height of the navbar is the same regardless of the screen size. */
   --navbar-height: 82px;
 }
 
-html {
-  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-body {
-  /* A cool raster pattern effect. */
-  background: linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px), var(--black);
-  background-size: 64px 64px;
+/* ---------------- General ---------------- */
+.container {
+  /* Making the website slightly smaller looks better. */
+  max-width: 1180px;
 }
 
 section {
@@ -23,33 +17,33 @@ section {
   padding-top: var(--navbar-height);
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* ---------------- Headings ---------------- */
+h1, h2, h3, h4, h5, h6, .card-subtitle {
   font-weight: 850 !important;
 }
 
 h2 {
-  /* Scrolling to the title of a page puts the title under the navbar. This puts the title under the navbar. */
-  scroll-margin-top: var(--navbar-height);
   /* Make the titles a lot bigger than Bootstrap normally does, which looks better. */
   font-size: clamp(4rem, 6vw, 6rem);
 }
 h3 {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 }
-h6 {
+
+/* ---------------- Cards ---------------- */
+.card-subtitle {
   font-size: 0.8rem;
 }
 
-.container {
-  /* Making the website slightly smaller looks better. */
-  max-width: 1180px;
+.card {
+  --bs-card-bg: var(--bs-secondary);
 }
 
+/* ---------------- Buttons ---------------- */
 /* Always use "btn-secondary" for buttons in this project. They are styled like I want to for my site. */
 .btn-secondary {
   --bs-btn-bg: var(--bs-secondary);
   font-weight: 700;
-  color: var(--white);
   /* Make the button slightly bigger. */
   padding: 0 1.2rem;
   min-height: 3rem;
@@ -64,6 +58,7 @@ h6 {
   border-color: var(--bs-primary);
 }
 
+/* ---------------- Badges ---------------- */
 /* Always use badges with the classes "badge rounded-pill text-primary border border-primary". */
 .badge {
   /* Slight transparent blue-ish background color is a nice effect. */
@@ -75,4 +70,58 @@ h6 {
   min-height: 2.5rem;
   gap: 0.65rem;
   padding: 0.35rem 0.75rem;
+}
+
+/* ---------------- Home ---------------- */
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+  background:
+          linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          var(--bs-body-bg);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(
+          to bottom,
+          black 0%,
+          black 70%,
+          transparent 100%
+  );
+}
+
+#home img {
+  max-width: clamp(300px, 40vw, 450px);
+}
+
+#home h1 {
+  font-size: clamp(4rem, 10vw, 8rem);
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+  --bs-navbar-color: var(--white);
+  --bs-navbar-hover-color: var(--bs-primary);
+  --bs-navbar-active-color: var(--bs-primary);
+}
+
+.navbar .container {
+  /* Making the box slightly transparent makes it look a lot better! */
+  background: rgba(21, 21, 21, 0.94);
+}
+
+.navbar-toggler-icon {
+  /* The original icon is gray. The only way to make it white is to fully override the image. */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28244,244,244,0.95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991.98px) {
+  .navbar .container {
+    /* We don't want the navbar to span the full width for small screens. */
+    width: calc(100% - 1.5rem) !important;
+  }
 }

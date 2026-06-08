@@ -6,22 +6,17 @@
     <meta name="description" content="Resume from Rico Apon"/>
     <meta name="author" content="Rico Apon"/>
     <title>Rico Apon</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png"/>
-    <script src="https://use.fontawesome.com/releases/v7.2.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-          type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/svg" href="assets/img/favicon.svg"/>
+    <script defer src="https://use.fontawesome.com/releases/v7.2.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet"/>
-    <link href="css/navbar.css" rel="stylesheet"/>
-    <link href="css/home.css" rel="stylesheet"/>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-md pt-3 fixed-top" id="topNav">
     <div class="container px-3 py-2 border rounded-4 fw-bold">
-        <a class="navbar-brand js-scroll-trigger" href="#home">Rico Apon</a>
+        <a class="navbar-brand" href="#home">Rico Apon</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                 aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,14 +24,26 @@
         </button>
 
         <div class="collapse navbar-collapse" id="mainNav">
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link js-scroll-trigger" href="#home">Home</a>
-                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-                <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-                <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-            </div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -69,64 +76,58 @@
 
     <section id="experience" class="pb-5">
         <h2 class="pb-4">Experience</h2>
-        <div class="row row-cols-1 g-4">
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-2 mb-2">
-                                <span class="text-primary font-monospace">2016 - Present</span>
-                            </div>
-                            <div class="col-12 col-md-10">
-                                <h3 class="card-title">Lead Engineer</h3>
-                                <h6 class="card-subtitle mb-2">Keylane</h6>
-                                <p>My responsibility is to implement software for customers. This includes DevOps
-                                    related tasks. Besides this, I am involved in a lot of other activities within the
-                                    company:</p>
-                                <ul>
-                                    <li>Mentor Software Engineers.</li>
-                                    <li>Guild master of ~100 Software Engineers.</li>
-                                    <li>Create and teach courses, which includes data modeling, JUnit, SQL Query Basics
-                                        and
-                                    </li>
-                                    <li>SQL Query Advanced.</li>
-                                    <li>Support in the hiring process.</li>
-                                </ul>
-                            </div>
+        <div class="vstack gap-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2016 - Present</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Lead Engineer</h3>
+                            <p class="card-subtitle mb-2">Keylane</p>
+                            <p>My responsibility is to implement software for customers. This includes DevOps
+                                related tasks. Besides this, I am involved in a lot of other activities within the
+                                company:</p>
+                            <ul>
+                                <li>Mentor Software Engineers.</li>
+                                <li>Guild master of ~100 Software Engineers.</li>
+                                <li>Create and teach courses, which includes data modeling, JUnit, SQL Query Basics
+                                    and
+                                </li>
+                                <li>SQL Query Advanced.</li>
+                                <li>Support in the hiring process.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-2 mb-2">
-                                <span class="text-primary font-monospace">2015 - 2016</span>
-                            </div>
-                            <div class="col-12 col-md-10">
-                                <h3 class="card-title">Student assistant</h3>
-                                <h6 class="card-subtitle mb-2">University of Leiden</h6>
-                                <p>I was an assistant in the course in which students give presentations and write
-                                    articles. My job was to grade the presentations and articles.</p>
-                            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2015 - 2016</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Student assistant</h3>
+                            <p class="card-subtitle mb-2">University of Leiden</p>
+                            <p>I was an assistant in the course in which students give presentations and write
+                                articles. My job was to grade the presentations and articles.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-2 mb-2">
-                                <span class="text-primary font-monospace">2011 - 2016</span>
-                            </div>
-                            <div class="col-12 col-md-10">
-                                <h3 class="card-title">Mathematics tutor</h3>
-                                <h6 class="card-subtitle mb-2">Bijlesnetwerk and StudentsPlus</h6>
-                                <p>I gave private Mathematics lessons to high school students and provided exam
-                                    trainings.</p>
-                            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2011 - 2016</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Mathematics tutor</h3>
+                            <p class="card-subtitle mb-2">Bijlesnetwerk and StudentsPlus</p>
+                            <p>I gave private Mathematics lessons to high school students and provided exam
+                                trainings.</p>
                         </div>
                     </div>
                 </div>
@@ -138,10 +139,10 @@
         <h2 class="pb-4">Portfolio</h2>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card h-100 bg-secondary">
+                <div class="card h-100">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Space Points</h3>
-                        <h6 class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Card game</h6>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Card game</p>
                         <p>A short card game where you try to get the highest score by building lasers and destroying
                             ships. Made using Angular.</p>
 
@@ -158,10 +159,10 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 bg-secondary">
+                <div class="card h-100">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Mental Health Week</h3>
-                        <h6 class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Story</h6>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Story</p>
                         <p>A short presentation created for the Mental Health Week created with reveal.js.</p>
 
                         <div class="mt-auto">
@@ -178,16 +179,16 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 bg-secondary">
+                <div class="card h-100">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Aris Machine</h3>
-                        <h6 class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Programming game</h6>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Programming game</p>
                         <p>A programming game where you have to solve puzzles in the programming language that I created
                             myself. Made using Angular.</p>
 
                         <div class="mt-auto">
                             <a class="btn btn-secondary" target="_blank"
-                               href="https://https://arismachine.ricoapon.nl/">
+                               href="https://arismachine.ricoapon.nl/">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
                             </a>
                             <a class="btn btn-secondary" target="_blank"
@@ -199,10 +200,10 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 bg-secondary">
+                <div class="card h-100">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Dutch Wordle</h3>
-                        <h6 class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Word guessing</h6>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Word guessing</p>
                         <p>Wordle, but with Dutch words.</p>
 
                         <div class="mt-auto">
@@ -217,11 +218,11 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 bg-secondary">
+                <div class="card h-100">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Talent voor Taal</h3>
-                        <h6 class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Maintained
-                            website</h6>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Maintained
+                            website</p>
                         <p>I designed and maintain the website. Deployments are fully automated using GitHub
                             Actions.</p>
 
@@ -238,15 +239,15 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 bg-secondary">
+                <div class="card h-100">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Elite Four</h3>
-                        <h6 class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Decision tool</h6>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Decision tool</p>
                         <p>An application which helps pick favorites out of large lists of options. A hobby project that
                             went through many different tech stacks, and ended up as an Angular website.</p>
 
                         <div class="mt-auto">
-                            <a class="btn btn-secondary" target="_blank" href="https://https://elitefour.ricoapon.nl/">
+                            <a class="btn btn-secondary" target="_blank" href="https://elitefour.ricoapon.nl/">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
                             </a>
                             <a class="btn btn-secondary" target="_blank"
@@ -258,10 +259,10 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 bg-secondary">
+                <div class="card h-100">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Readable Regex</h3>
-                        <h6 class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Java library</h6>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Java library</p>
                         <p>A library that helps creating readable regular expressions. First library that I deployed
                             to Maven Central.</p>
 
@@ -283,103 +284,95 @@
 
     <section id="skills" class="pb-5">
         <h2 class="pb-4">Skills</h2>
-        <div class="row row-cols-1 g-4">
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <h3 class="card-title">Programming languages</h3>
-                        <div class="d-flex flex-wrap gap-2">
+        <div class="vstack gap-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Programming languages</h3>
+                    <div class="d-flex flex-wrap gap-2">
                             <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fab fa-java" aria-hidden="true"></i>Java
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-database" aria-hidden="true"></i>SQL
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fab fa-angular" aria-hidden="true"></i>Angular
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-code" aria-hidden="true"></i>Kotlin
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-terminal" aria-hidden="true"></i>Bash
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fab fa-react" aria-hidden="true"></i>React
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fab fa-python" aria-hidden="true"></i>Python
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fab fa-php" aria-hidden="true"></i>PHP
                             </span>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <h3 class="card-title">Databases</h3>
-                        <div class="d-flex flex-wrap gap-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Databases</h3>
+                    <div class="d-flex flex-wrap gap-2">
                             <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-database" aria-hidden="true"></i>PostgreSQL
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-database" aria-hidden="true"></i>Db2
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-database" aria-hidden="true"></i>H2
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-database" aria-hidden="true"></i>Oracle
                             </span>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <h3 class="card-title">CI/CD</h3>
-                        <div class="d-flex flex-wrap gap-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">CI/CD</h3>
+                    <div class="d-flex flex-wrap gap-2">
                             <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fab fa-github" aria-hidden="true"></i>GitHub Actions
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-tools" aria-hidden="true"></i>Bamboo
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-tools" aria-hidden="true"></i>Travis CI
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-tools" aria-hidden="true"></i>TeamCity
                             </span>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <h3 class="card-title">Others</h3>
-                        <div class="d-flex flex-wrap gap-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Others</h3>
+                    <div class="d-flex flex-wrap gap-2">
                             <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fab fa-docker" aria-hidden="true"></i>Docker
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fab fa-git-alt" aria-hidden="true"></i>Git and Subversion
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-box" aria-hidden="true"></i>Gradle, Maven and npm
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fab fa-linux" aria-hidden="true"></i>Linux
                             </span>
-                            <span class="badge rounded-pill text-primary border border-primary">
+                        <span class="badge rounded-pill text-primary border border-primary">
                                 <i class="fas fa-keyboard" aria-hidden="true"></i>IntelliJ IDEA
                             </span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -388,67 +381,59 @@
 
     <section id="education" class="pb-5">
         <h2 class="pb-4">Education</h2>
-        <div class="row row-cols-1 g-4">
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-2 mb-2">
-                                <span class="text-primary font-monospace">2022 - 2022</span>
-                            </div>
-                            <div class="col-12 col-md-10">
-                                <h3 class="card-title">Coach</h3>
-                                <h6 class="card-subtitle mb-2">ICM</h6>
-                                <p>A half-year training related for life coach.</p>
-                            </div>
+        <div class="vstack gap-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2022 - 2022</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Coach</h3>
+                            <p class="card-subtitle mb-2">ICM</p>
+                            <p>A half-year training related for life coach.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-2 mb-2">
-                                <span class="text-primary font-monospace">2014 - 2016</span>
-                            </div>
-                            <div class="col-12 col-md-10">
-                                <h3 class="card-title">Master mathematics</h3>
-                                <h6 class="card-subtitle mb-2">University of Leiden</h6>
-                                <p>Master in mathematics, focussing on theoretical topics.</p>
-                            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2014 - 2016</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Master mathematics</h3>
+                            <p class="card-subtitle mb-2">University of Leiden</p>
+                            <p>Master in mathematics, focussing on theoretical topics.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-2 mb-2">
-                                <span class="text-primary font-monospace">2014 - 2015</span>
-                            </div>
-                            <div class="col-12 col-md-10">
-                                <h3 class="card-title">Minor education</h3>
-                                <h6 class="card-subtitle mb-2">University of Leiden</h6>
-                                <p>Second degree teaching qualification in mathematics.</p>
-                            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2014 - 2015</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Minor education</h3>
+                            <p class="card-subtitle mb-2">University of Leiden</p>
+                            <p>Second degree teaching qualification in mathematics.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-2 mb-2">
-                                <span class="text-primary font-monospace">2011 - 2014</span>
-                            </div>
-                            <div class="col-12 col-md-10">
-                                <h3 class="card-title">Bachelor Mathematics</h3>
-                                <h6 class="card-subtitle mb-2">University of Leiden</h6>
-                                <p>Bachelor in mathematics.</p>
-                            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2011 - 2014</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Bachelor Mathematics</h3>
+                            <p class="card-subtitle mb-2">University of Leiden</p>
+                            <p>Bachelor in mathematics.</p>
                         </div>
                     </div>
                 </div>
@@ -458,40 +443,32 @@
 
     <section id="interests" class="pb-5">
         <h2 class="pb-4">Interests</h2>
-        <div class="row row-cols-1 g-4">
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <h3 class="card-title">Squash</h3>
-                        My favorite <span class="text-primary">sport</span>. You can find me regularly on the squash
-                        court.
-                    </div>
+        <div class="vstack gap-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Squash</h3>
+                    <p class="mb-1">My favorite <span class="text-primary">sport</span>. You can find me regularly on the squash
+                    court.</p>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <h3 class="card-title">Epic fantasy</h3>
-                        I love to read epic fantasy books. <span class="text-primary">Brandon Sanderson</span> peaked my
-                        interest.
-                    </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Epic fantasy</h3>
+                    <p class="mb-1">I love to read epic fantasy books. <span class="text-primary">Brandon Sanderson</span> peaked my
+                    interest.</p>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <h3 class="card-title">Strategy games</h3>
-                        I enjoy board games with lots of strategy and little luck. Dominion and
-                        <span class="text-primary">Terraforming Mars</span> are my favorites.
-                    </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Strategy games</h3>
+                    <p class="mb-1">I enjoy board games with lots of strategy and little luck. Dominion and
+                    <span class="text-primary">Terraforming Mars</span> are my favorites.</p>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 bg-secondary">
-                    <div class="card-body">
-                        <h3 class="card-title">Gaming</h3>
-                        Apart from board games, I very much enjoy <span class="text-primary">gaming</span>.
-                    </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Gaming</h3>
+                    <p class="mb-1">Apart from board games, I very much enjoy <span class="text-primary">gaming</span>.</p>
                 </div>
             </div>
         </div>
