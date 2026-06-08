@@ -1,27 +1,16 @@
-/*!
-* Start Bootstrap - Resume v7.0.0 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-//
-// Scripts
-//
-
 window.addEventListener('DOMContentLoaded', () => {
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const sideNav = document.body.querySelector('#sideNav');
-    if (sideNav) {
+    // Activate Bootstrap scrollspy on the main nav element.
+    const mainNav = document.body.querySelector('#mainNav');
+    if (mainNav) {
         new bootstrap.ScrollSpy(document.body, {
-            target: '#sideNav',
-            offset: 74,
+            target: '#mainNav'
         });
     }
 
-    // Collapse responsive navbar when toggler is visible
+    // When on mobile variant, clicking a nav link doesn't automatically collapse the navbar. This code ensures it collapses.
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
+        document.querySelectorAll('#mainNav .nav-link')
     );
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
@@ -30,5 +19,4 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
 });

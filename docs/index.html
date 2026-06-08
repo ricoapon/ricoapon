@@ -1,382 +1,504 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content="Resume from Rico Apon"/>
     <meta name="author" content="Rico Apon"/>
     <title>Rico Apon</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png"/>
-    <!-- Font Awesome icons -->
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-          type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css"/>
-    <!-- Core theme CSS (including Bootstrap) -->
+    <link rel="icon" type="image/svg" href="assets/img/favicon.svg"/>
+    <script defer src="https://use.fontawesome.com/releases/v7.2.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet"/>
 </head>
 <body>
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#home">
-        <span class="d-block d-lg-none">Rico Apon</span>
-        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                                             src="assets/img/profile.jpg" alt="profile-pic"/></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-        </ul>
-    </div>
-</nav>
-<!-- Page Content-->
-<div class="container-fluid p-0">
-    <!-- Home-->
-    <div id="home"></div>
-    <section class="d-flex flex-column justify-content-center" id="home-section">
-        <section class="position-relative resume-section">
-            <div class="resume-section-content">
-                <h1 class="mb-0">
-                    Rico
-                    <span class="text-primary">Apon</span>
-                </h1>
 
-                <div class="subheading mb-4">
-                    I'm a <span class="text-primary">Software Engineer</span>. What's your superpower?<br/>
-                </div>
+<nav class="navbar navbar-expand-md pt-3 fixed-top" id="topNav">
+    <div class="container px-3 py-2 border rounded-4 fw-bold">
+        <a class="navbar-brand" href="#home">Rico Apon</a>
 
-                <div class="social-icons">
-                    <a class="social-icon" target="_blank" href="https://github.com/ricoapon"><i
-                            class="fab fa-github"></i></a>
-                    <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/rico-apon-5143ba143/"><i
-                            class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </section>
-    </section>
-    <hr class="m-0"/>
-    <!-- Experience-->
-    <section class="resume-section" id="experience">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Experience</h2>
-            <div class="mb-5">
-                <h3 class="mb-0">Senior Software Engineer</h3>
-                <div class="subheading mb-3">Keylane</div>
-                <p>My responsibility is to implement software for customers. This includes DevOps related tasks.
-                    Besides this, I am involved in a lot of other activities within the company:</p>
-                <ul>
-                    <li>Mentor Software Engineers.</li>
-                    <li>Guild master of ~100 Software Engineers.</li>
-                    <li>Create and teach courses, which includes data modeling, JUnit, SQL Query Basics and SQL Query
-                        Advanced.
-                    </li>
-                    <li>Support in the hiring process.</li>
-                </ul>
-                <span class="text-primary">December 2016 - Present</span>
-            </div>
-            <div class="mb-5">
-                <h3 class="mb-0">Student assistant</h3>
-                <div class="subheading mb-3">University of Leiden</div>
-                <p>I was an assistant in the course in which students give presentations and write articles.
-                    My job was to grade the presentations and articles.</p>
-                <span class="text-primary">2015 - 2016</span>
-            </div>
-            <div class="mb-5">
-                <h3 class="mb-0">Mathematics tutor</h3>
-                <div class="subheading mb-3">Bijlesnetwerk and StudentsPlus</div>
-                <p>I gave private Mathematics lessons to high school students and provided exam trainings.</p>
-                <span class="text-primary">2011 - 2016</span>
-            </div>
-        </div>
-    </section>
-    <hr class="m-0"/>
-    <!-- Portfolio-->
-    <section class="resume-section" id="portfolio">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Portfolio</h2>
-            <div class="mb-5">
-                <h3 class="mb-0">
-                    Creator of <a target="_blank" href="https://arismachine.ricoapon.nl/">Aris Machine</a>
-                </h3>
-                <p>A programming game where you have to solve puzzles in the programming language Aris. See if you can
-                    solve all the puzzles!</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <p>I made the game from scratch in Angular. I did the design myself. Aris is a language I have created
-                    specifically for this game using the
-                    <a target="_blank" href="https://www.antlr.org/">ANTLR</a> library.</p>
-            </div>
-            <div class="mb-5">
-                <h3 class="mb-0">
-                    Creator of <a target="_blank" href="https://spacepoints.ricoapon.nl/">Space Points</a>
-                </h3>
-                <p>A short card game where you try to get the highest score by building lasers and destroying ships. Can
-                    you beat my high score?</p>
-
-                <p>I made the game from scratch in Angular. I did the design myself. The cards
-                    have been created by another party via Fiverr.</p>
-            </div>
-            <div class="mb-5">
-                <h3 class="mb-0">
-                    Creator and maintainer of <a target="_blank" href="https://talentvoortaal.nl">talentvoortaal.nl</a>
-                </h3>
-                <p>I designed the website and have been maintaining the current version. The latest version is an
-                    SPA created in Angular. The code can be found in the
-                    <a target="_blank" href="https://github.com/ricoapon/talent-voor-taal">GitHub repository</a>.
-                    The master branch will be deployed to <a target="_blank" href="https://talentvoortaal.ricoapon.nl/">GitHub
-                        Pages</a>
-                    as a test environment. All deployments (test and production) are automated using GitHub Actions.
-                </p>
-            </div>
-            <div class="mb-5">
-                <h3 class="mb-0">
-                    Creator of <a target="_blank" href="https://elitefour.ricoapon.nl">Elite Four</a>
-                </h3>
-                <p>A friend of mine requested an application which helps pick favorites out of large lists of options.
-                    This application went through all kinds of phases and tech stacks:</p>
-                <ul>
-                    <li>Desktop Java application using Swing.</li>
-                    <li>Recreated Java application using Spring and React
-                        (see <a target="_blank" href="https://github.com/ricoapon/EliteFour">GitHub repository</a>).
-                    </li>
-                    <li>Recreated into another desktop application using Angular and Electron
-                        (see <a target="_blank" href="https://github.com/ricoapon/elite-four-electron">GitHub
-                            repository</a>).
-                    </li>
-                    <li>Web version copied from the Angular version with Electron removed and data saved into
-                        localStorage in the browser
-                        (see <a target="_blank" href="https://github.com/ricoapon/elite-four-web">GitHub repository</a>).
-                    </li>
-                </ul>
-                <p>I am proud to say that the latest version is still being used!</p>
-            </div>
-            <div class="mb-5">
-                <h3 class="mb-0">
-                    Creator of <a target="_blank" href="https://github.com/ricoapon/readable-regex">Readable Regex</a>
-                </h3>
-                <p>I have created a library that allows regular expressions to be more readable. The core of the
-                    library is a customizable builder that constructs regular expressions.</p>
-
-                <p>Commits in the repository automatically trigger new builds on travis-ci. I ensure the code coverage
-                    is 100%. See the
-                    <a target="_blank" href="https://github.com/ricoapon/readable-regex">GitHub repository</a>
-                    for more information, including a user guide with code examples.
-                </p>
-                <p>
-                    I don't maintain this project. It was mainly to learn how to create my own library: add proper
-                    documentation, deploying to Maven Central and writing a good README.
-                </p>
-            </div>
-        </div>
-    </section>
-    <hr class="m-0"/>
-    <!-- Skills-->
-    <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Skills</h2>
-            <div class="subheading mb-3">Programming languages</div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div>
-                        <div class="float-start"><p class="mb-0">
-                            Java
-                        </p></div>
-                        <div class="float-end"><p class="mb-0 text-right">
-                            90%
-                        </p></div>
-                        <div class="clearfix"></div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 90%;"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="float-start"><p class="mb-0">
-                            SQL
-                        </p></div>
-                        <div class="float-end"><p class="mb-0 text-right">
-                            80%
-                        </p></div>
-                        <div class="clearfix"></div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 80%;"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="float-start"><p class="mb-0">
-                            Angular
-                        </p></div>
-                        <div class="float-end"><p class="mb-0 text-right">
-                            50%
-                        </p></div>
-                        <div class="clearfix"></div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 50%;"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="float-start"><p class="mb-0">
-                            Kotlin
-                        </p></div>
-                        <div class="float-end"><p class="mb-0 text-right">
-                            50%
-                        </p></div>
-                        <div class="clearfix"></div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 50%;"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 mb-3">
-                    <div>
-                        <div class="float-start"><p class="mb-0">
-                            Bash
-                        </p></div>
-                        <div class="float-end"><p class="mb-0 text-right">
-                            30%
-                        </p></div>
-                        <div class="clearfix"></div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="float-start"><p class="mb-0">
-                            React
-                        </p></div>
-                        <div class="float-end"><p class="mb-0 text-right">
-                            20%
-                        </p></div>
-                        <div class="clearfix"></div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 30%;"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="float-start"><p class="mb-0">
-                            Python
-                        </p></div>
-                        <div class="float-end"><p class="mb-0 text-right">
-                            20%
-                        </p></div>
-                        <div class="clearfix"></div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 20%;"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="float-start"><p class="mb-0">
-                            PHP
-                        </p></div>
-                        <div class="float-end"><p class="mb-0 text-right">
-                            20%
-                        </p></div>
-                        <div class="clearfix"></div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 20%;"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p></p>
-            <div class="subheading mb-3">Experience with:</div>
-            <ul class="fa-ul mb-0">
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Docker
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Git and Subversion
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Gradle, Maven and npm
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
                 </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    PostgreSQL, Db2, H2 and Oracle databases
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Bamboo, Travis CI, TeamCity and GitHub Actions
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
                 </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Linux
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    IntelliJ IDEA
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests</a>
                 </li>
             </ul>
         </div>
-    </section>
-    <hr class="m-0"/>
-    <!-- Education-->
-    <section class="resume-section" id="education">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Education</h2>
-            <div class="mb-5">
-                <h3 class="mb-0">Coach</h3>
-                <div class="subheading mb-3">ICM</div>
-                <span class="text-primary">2022 - 2022</span>
-            </div>
-            <div class="mb-5">
-                <h3 class="mb-0">Master mathematics</h3>
-                <div class="subheading mb-3">University of Leiden</div>
-                <span class="text-primary">2014-2016</span>
-            </div>
-            <div class="mb-5">
-                <h3 class="mb-0">Minor education</h3>
-                <div class="subheading mb-3">University of Leiden</div>
-                <p>Second degree teaching qualification in mathematics.</p>
-                <span class="text-primary">2014-2015</span>
-            </div>
-            <div class="mb-5">
-                <h3 class="mb-0">Bachelor mathematics</h3>
-                <div class="subheading mb-3">University of Leiden</div>
-                <span class="text-primary">2011 - 2014</span>
+    </div>
+</nav>
+
+<main class="container">
+    <section id="home" class="min-vh-100 d-flex">
+        <div class="m-auto w-100">
+            <div class="row">
+                <div class="col-12 col-md-5 text-center">
+                    <img class="w-100 rounded-4" src="assets/img/profile.jpg" alt="Rico Apon"/>
+                </div>
+                <div class="col-12 col-md-7 text-center text-md-start d-flex flex-column justify-content-center">
+                    <h1>Rico <span class="text-primary">Apon</span></h1>
+                    <h3 class="text-body-secondary mb-3">
+                        I'm a <span class="text-primary">Software Engineer</span>. What's your superpower?
+                    </h3>
+                    <div>
+                        <a class="btn btn-secondary" target="_blank" href="https://github.com/ricoapon">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a class="btn btn-secondary" target="_blank"
+                           href="https://www.linkedin.com/in/rico-apon-5143ba143/">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <hr class="m-0"/>
-    <!-- Interests-->
-    <section class="resume-section" id="interests">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Interests</h2>
-            <p>My biggest hobby is programming but, besides that, I do also have a social life. I love to play
-                <span class="text-primary">squash</span>, which is my favorite sport. You can find me regularly on the
-                squash court. In addition I love to <span class="text-primary">read</span> epic fantasy books. Brandon
-                Sanderson peaked my interest.</p>
-            <p class="mb-0">Apart from <span class="text-primary">gaming</span>, I very much enjoy
-                <span class="text-primary">board games</span>. I mostly play games with lots of strategy and little
-                luck.
-                My two most favorite boardgames are Dominion and Terraforming Mars. Can you beat me?</p>
+
+    <section id="portfolio" class="pb-5">
+        <h2 class="pb-4">Portfolio</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Space Points</h3>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Card game</p>
+                        <p>A short card game where the player tries to get the highest score. It was my first project
+                            where I hired artists for the card images. I am still proud of the home page which I
+                            designed myself.</p>
+
+                        <div class="mt-auto">
+                            <a class="btn btn-secondary" target="_blank" href="https://spacepoints.ricoapon.nl/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
+                            </a>
+                            <a class="btn btn-secondary" target="_blank"
+                               href="https://github.com/ricoapon/space-points">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Mental Health Week</h3>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Story</p>
+                        <p>A short presentation about mental health, built as an interactive story with reveal.js. It
+                            was a chance to combine personal storytelling with a lightweight web-based presentation
+                            format.</p>
+
+                        <div class="mt-auto">
+                            <a class="btn btn-secondary" target="_blank"
+                               href="https://presentations.ricoapon.nl/mental-health-week/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
+                            </a>
+                            <a class="btn btn-secondary" target="_blank"
+                               href="https://github.com/ricoapon/presentations">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Aris Machine</h3>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Programming game</p>
+                        <p>A programming puzzle game built around Aris, a small language I designed for the game. The
+                            web app is built in Angular, with the language/parser work as the main technical
+                            challenge.</p>
+
+                        <div class="mt-auto">
+                            <a class="btn btn-secondary" target="_blank"
+                               href="https://arismachine.ricoapon.nl/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
+                            </a>
+                            <a class="btn btn-secondary" target="_blank"
+                               href="https://github.com/ricoapon/aris-machine">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Dutch Wordle</h3>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Word guessing</p>
+                        <p>A Dutch version of Wordle with a new word puzzle every day. I built it for a friend as a fun
+                            way to practice Dutch words.</p>
+
+                        <div class="mt-auto">
+                            <a class="btn btn-secondary" target="_blank" href="https://wordle365.ricoapon.nl/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
+                            </a>
+                            <a class="btn btn-secondary" target="_blank" href="https://github.com/ricoapon/wordle-365">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Talent voor Taal</h3>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Maintained
+                            website</p>
+                        <p>A website I designed and continue to maintain for Talent voor Taal. Deployments are fully
+                            automated with GitHub Actions, making it easy to publish changes.</p>
+
+                        <div class="mt-auto">
+                            <a class="btn btn-secondary" target="_blank" href="https://talentvoortaal.nl/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
+                            </a>
+                            <a class="btn btn-secondary" target="_blank"
+                               href="https://github.com/ricoapon/talent-voor-taal">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Elite Four</h3>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Decision tool</p>
+                        <p>An application which helps pick favorites out of large lists of options. A hobby project that
+                            went through many different tech stacks, and ended up as an Angular website.</p>
+
+                        <div class="mt-auto">
+                            <a class="btn btn-secondary" target="_blank" href="https://elitefour.ricoapon.nl/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
+                            </a>
+                            <a class="btn btn-secondary" target="_blank"
+                               href="https://github.com/ricoapon/elite-four-web">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Readable Regex</h3>
+                        <p class="card-subtitle mb-2 text-primary text-uppercase font-monospace">Java library</p>
+                        <p>A Java library for building regular expressions in a more readable way. This was the first
+                            time I published a library to Maven Central!</p>
+
+                        <div class="mt-auto">
+                            <a class="btn btn-secondary" target="_blank"
+                               href="https://mvnrepository.com/artifact/io.github.ricoapon/readable-regex/versions">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Library
+                            </a>
+                            <a class="btn btn-secondary" target="_blank"
+                               href="https://github.com/ricoapon/readable-regex">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <hr class="m-0"/>
-</div>
-<!-- Bootstrap core JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+
+    <section id="experience" class="pb-5">
+        <h2 class="pb-4">Experience</h2>
+        <div class="vstack gap-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2016 - Present</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Lead Engineer</h3>
+                            <p class="card-subtitle mb-2">Keylane</p>
+                            <p>I maintain internal developer platforms and tools that help engineers build, release, and
+                                run software, including Bitbucket, Artifactory, and Kubernetes. Besides this, I am
+                                involved in a lot of other activities within the company:</p>
+                            <ul>
+                                <li>Mentor Software Engineers.</li>
+                                <li>Guild master of around 150 Software Engineers.</li>
+                                <li>Create and teach courses, which includes data modeling, JUnit, SQL Query Basics
+                                    and SQL Query Advanced.
+                                </li>
+                                <li>Support in the hiring process.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2015 - 2016</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Student assistant</h3>
+                            <p class="card-subtitle mb-2">University of Leiden</p>
+                            <p>I was an assistant in the course in which students give presentations and write
+                                articles. My job was to grade the presentations and articles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2011 - 2016</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Mathematics tutor</h3>
+                            <p class="card-subtitle mb-2">Bijlesnetwerk and StudentsPlus</p>
+                            <p>I gave private Mathematics lessons to high school students and provided exam
+                                trainings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="pb-5">
+        <h2 class="pb-4">Skills</h2>
+        <div class="vstack gap-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Programming languages</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                            <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fab fa-java" aria-hidden="true"></i>Java
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-database" aria-hidden="true"></i>SQL
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fab fa-angular" aria-hidden="true"></i>Angular
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-code" aria-hidden="true"></i>Kotlin
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-terminal" aria-hidden="true"></i>Bash
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fab fa-react" aria-hidden="true"></i>React
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fab fa-python" aria-hidden="true"></i>Python
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fab fa-php" aria-hidden="true"></i>PHP
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Databases</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                            <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-database" aria-hidden="true"></i>PostgreSQL
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-database" aria-hidden="true"></i>Db2
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-database" aria-hidden="true"></i>H2
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-database" aria-hidden="true"></i>Oracle
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">CI/CD</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                            <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fab fa-github" aria-hidden="true"></i>GitHub Actions
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-tools" aria-hidden="true"></i>Bamboo
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-tools" aria-hidden="true"></i>Travis CI
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-tools" aria-hidden="true"></i>TeamCity
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Others</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                            <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fab fa-docker" aria-hidden="true"></i>Docker
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fab fa-git-alt" aria-hidden="true"></i>Git and Subversion
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-box" aria-hidden="true"></i>Gradle, Maven and npm
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fab fa-linux" aria-hidden="true"></i>Linux
+                            </span>
+                        <span class="badge rounded-pill text-primary border border-primary">
+                                <i class="fas fa-keyboard" aria-hidden="true"></i>IntelliJ IDEA
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="pb-5">
+        <h2 class="pb-4">Education</h2>
+        <div class="vstack gap-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2022 - 2022</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Coach</h3>
+                            <p class="card-subtitle mb-2">ICM</p>
+                            <p>A six-month training in life coaching.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2014 - 2016</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Master mathematics</h3>
+                            <p class="card-subtitle mb-2">University of Leiden</p>
+                            <p>Master in mathematics with a focus on theoretical topics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2014 - 2015</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Minor education</h3>
+                            <p class="card-subtitle mb-2">University of Leiden</p>
+                            <p>Second degree teaching qualification in mathematics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-2 mb-2">
+                            <span class="text-primary font-monospace">2011 - 2014</span>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h3 class="card-title">Bachelor Mathematics</h3>
+                            <p class="card-subtitle mb-2">University of Leiden</p>
+                            <p>Bachelor in mathematics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="pb-5">
+        <h2 class="pb-4">Interests</h2>
+        <div class="vstack gap-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Dancing</h3>
+                    <p class="mb-1">I love to dance <span class="text-primary">salsa</span> and
+                        <span class="text-primary">bachata</span>. You can find me regularly in the dance school or at
+                        dancing parties!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Reading</h3>
+                    <p class="mb-1">I love to read epic fantasy books.
+                        <span class="text-primary">Brandon Sanderson</span> is my favorite author.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Board games</h3>
+                    <p class="mb-1">I enjoy board games with lots of strategy and little luck.
+                        <span class="text-primary">Dominion</span> and
+                        <span class="text-primary">Terraforming Mars</span> are my favorites.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Psychology</h3>
+                    <p class="mb-1">I am interested in <span class="text-primary">why</span> people do what they do, and
+                        what shapes them into who they are. That also applies to myself, which is why I spend time on
+                        <span class="text-primary">self-development</span> through books, coaching, and reflection.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Storytelling</h3>
+                    <p class="mb-1">I like giving technical <span class="text-primary">presentations</span> and telling
+                        stories. Of course, it is possible that I simply enjoy being in the
+                        <span class="text-primary">spotlight</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Some extra whitespace at the bottom looks nicer. -->
+    <div class="pb-5"></div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-<!-- Core theme JS -->
 <script src="js/scripts.js"></script>
 </body>
 </html>
