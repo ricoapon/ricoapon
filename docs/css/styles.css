@@ -73,6 +73,15 @@ h3 {
 }
 
 /* ---------------- Home ---------------- */
+#home {
+  /*
+   * On mobile, dynamic viewport height works better, but not all browsers support this.
+   * Neither does Bootstrap, so we implement it ourselves.
+   */
+  height: 100vh;
+  height: 100dvh;
+}
+
 #home::before {
   content: "";
   position: absolute;
