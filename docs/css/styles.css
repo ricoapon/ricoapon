@@ -75,11 +75,12 @@ h3 {
 /* ---------------- Home ---------------- */
 #home {
   /*
-   * On mobile, dynamic viewport height works better, but not all browsers support this.
-   * Neither does Bootstrap, so we implement it ourselves.
+   * Fill the viewport, but let the section grow when the photo and text stack
+   * on mobile or the viewport gets shorter as browser controls change.
+   * Keep a fallback for browsers without dynamic viewport units.
    */
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 #home::before {
@@ -105,6 +106,7 @@ h3 {
 
 #home img {
   max-width: clamp(300px, 40vw, 450px);
+  height: auto;
 }
 
 #home h1 {
